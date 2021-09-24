@@ -1,0 +1,8 @@
+ SELECT ridership_data.station_id, ridership_data.station_name, ridership_data.date, ridership_data.rides, cta_stations."A_D_A", cta_stations."RED", cta_stations."BLUE", cta_stations."GREEN",
+ cta_stations."BROWN", cta_stations."PURPLE", cta_stations."PURPLE_EXPRESS", cta_stations."YELLOW", cta_stations."PINK", cta_stations."ORANGE", cta_stations."Lat_Lon"
+ 
+ FROM ridership_data
+ JOIN cta_stations
+ ON ridership_data.station_id = cta_stations."MAP_ID"
+ 
+ 
